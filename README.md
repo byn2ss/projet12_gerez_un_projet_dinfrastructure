@@ -125,8 +125,7 @@ Pensez à insérer une capture d'écran de votre rapport Power BI finalisé pour
 2. Démarrer Kestra en liant le volume de données :
 
 ```bash
-docker run --pull always -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock -v "${PWD}:/data" kestra/kestra:latest server local
-
+docker run --pull always -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock kestra/kestra:latest server local
 ```
 
 3. Importer le fichier Excel de données dans l'onglet **Files** de Kestra.
