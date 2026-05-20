@@ -1,4 +1,3 @@
-<img width="525" height="293" alt="powerbi" src="https://github.com/user-attachments/assets/0179ff83-42e8-44a5-a193-9f27cb495c94" />
 #  SportData POC - Pipeline DataOps d'Animation & Gestion RH
 
 Ce projet présente un pipeline de données industriel (ETL/DataOps) automatisé permettant d'ingérer les flux d'activités sportives des salariés (Simulation de l'API Strava), d'auditer la qualité des données, de calculer des règles de gestion RH (Primes et jours de repos Bien-être), et de générer des publications communautaires pour Slack.
@@ -95,6 +94,28 @@ Une fois le flux audité et validé par Great Expectations, le pipeline génère
 * **Course à pied :** `🤖 [Slack - #club-sport] : "Bravo Audrey Colin ! Tu viens de courir 7.5 km en 42 min ! Quelle énergie ! 🔥🏅"`
 * **Vélo :** `🤖 [Slack - #club-sport] : "Superbe session de Vélo pour Bertrand Grondin ! 8.0 km parcourus en 26 min ! Ensemble vers le bien-être ! 🚴‍♂️💨"`
 * **Escalade :** `🤖 [Slack - #club-sport] : "Superbe session de Escalade pour Mathilde Dias ! 0.0 km parcourus en 84 min ! Ensemble vers le bien-être ! 🚴‍♂️💨"`
+
+## 7. Restitution Stratégique & Business Intelligence (Power BI)
+
+Le fichier analytique `Reporting_RH_Final.csv` généré à la racine de l'infrastructure par l'orchestrateur Kestra est configuré pour alimenter automatiquement un tableau de bord décisionnel sur **Power BI Desktop**. 
+
+Ce livrable final permet à la direction des Ressources Humaines de piloter en temps réel l'impact de la politique RSE et d'auditer la conformité des dépenses financières.
+
+### Indicateurs Clés (KPIs) & Visuels Intégrés :
+* **Pilotage de la Masse Financière (RH) :** Somme dynamique et distribution des montants réels des primes.
+* **Audit de Conformité (Data Governance) :** Graphique de répartition des salariés validés comme `Éligible` vs ` Non Éligible` en corrélant le mode de transport déclaré et la distance calculée par le Mock API Google Maps.
+* **Score Card Bien-être & Engagement :** Suivi du volume global des 2 500 activités ingérées depuis le flux Strava, et décompte précis des collaborateurs ayant validé le seuil critique des 15 sessions pour débloquer leurs **5 jours de congés bonus**.
+
+### Spécifications Techniques de l'Import :
+Pour garantir la robustesse de l'actualisation sans intervention humaine, l'import Power Query respecte les standards de production suivants :
+* **Format de fichier :** CSV encodé en `UTF-8-SIG` (conservation parfaite des accents des noms des salariés).
+* **Séparateur de colonnes :** Point-virgule (`;`) et format décimal à la virgule (`,`) pour une compatibilité native avec les configurations régionales européennes.
+
+### Aperçu du Dashboard Interactif :
+Pensez à insérer une capture d'écran de votre rapport Power BI finalisé pour illustrer cette section :
+
+<img width="525" height="293" alt="powerbi" src="https://github.com/user-attachments/assets/0179ff83-42e8-44a5-a193-9f27cb495c94" />
+
 
 ---
 
