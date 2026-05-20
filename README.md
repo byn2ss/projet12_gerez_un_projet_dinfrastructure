@@ -1,7 +1,3 @@
-<img width="618" height="427" alt="Capture d’écran 2026-05-21 005154" src="https://github.com/user-attachments/assets/7b17875c-8da5-4324-b055-59176882353a" />
-<img width="917" height="378" alt="Capture d’écran 2026-05-20 002324" src="https://github.com/user-attachments/assets/7ee481b2-aa2d-4c57-bd78-d0f08170d61a" />
-
-
 #  SportData POC - Pipeline DataOps d'Animation & Gestion RH
 
 Ce projet présente un pipeline de données industriel (ETL/DataOps) automatisé permettant d'ingérer les flux d'activités sportives des salariés (Simulation de l'API Strava), d'auditer la qualité des données, de calculer des règles de gestion RH (Primes de vélotaf et jours de repos Bien-être), et de générer des publications communautaires pour Slack.
@@ -72,7 +68,7 @@ SLACK_WEBHOOK_URL=[https://hooks.slack.com/services/T000/B000/XXXXXX](https://ho
 Le script prend l'adresse textuelle des employés et calcule la distance réelle en kilomètres vers le siège social situé à Lattes (Montpellier : 7.5km, Pérols : 4.2km, etc.).
 
 ### Simulation Cohérente du Flux Strava
-
+<img width="618" height="427" alt="Capture d’écran 2026-05-21 005154" src="https://github.com/user-attachments/assets/7b17875c-8da5-4324-b055-59176882353a" />
 Pour simuler le temps réel, le script génère un flux de **2 500 événements** parfaitement cohérents avec la demande de Juliette (si un employé déclaré en aller en velo au travil il se verra attribuer des sessions "Vélo"). L'escalade stationnaire force automatiquement la distance à `0.0 km`.
 
 ### Audit Data Quality (Great Expectations)
@@ -86,6 +82,9 @@ Trois règles de conformité strictes sont appliquées sur le flux généré, el
 
 ---
 <img width="908" height="433" alt="logs succes " src="https://github.com/user-attachments/assets/0fa181a8-a819-4fb8-bed4-892ad9b46125" />
+
+<img width="917" height="378" alt="Capture d’écran 2026-05-20 002324" src="https://github.com/user-attachments/assets/7ee481b2-aa2d-4c57-bd78-d0f08170d61a" />
+
 ## 5 Restitutions & Animation Slack
 
 Une fois le flux audité et validé par Great Expectations, le pipeline génère les messages d'animation communautaires avec conversion des distances en kilomètres, des temps en minutes, et inclusion des émojis et commentaires afin de creer une communauté et donc de générer de la motivation :
