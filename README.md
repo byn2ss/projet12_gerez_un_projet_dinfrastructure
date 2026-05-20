@@ -1,3 +1,4 @@
+
 #  SportData POC - Pipeline DataOps d'Animation & Gestion RH
 
 Ce projet présente un pipeline de données industriel (ETL/DataOps) automatisé permettant d'ingérer les flux d'activités sportives des salariés (Simulation de l'API Strava), d'auditer la qualité des données, de calculer des règles de gestion RH (Primes de vélotaf et jours de repos Bien-être), et de générer des publications communautaires pour Slack.
@@ -8,7 +9,7 @@ Ce projet présente un pipeline de données industriel (ETL/DataOps) automatisé
 
 Le pipeline est orchestré de manière moderne afin de garantir la portabilité, le monitoring et la traçabilité des exécutions.
 
-
+<img width="1920" height="1080" alt="Votre texte de paragraphe" src="https://github.com/user-attachments/assets/f18d4bcf-0935-4601-ad78-865ab4dcaead" />
 ```
 
 [ Données RH (Excel) ] ──┐
