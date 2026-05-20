@@ -1,8 +1,6 @@
 <img width="618" height="427" alt="Capture d’écran 2026-05-21 005154" src="https://github.com/user-attachments/assets/7b17875c-8da5-4324-b055-59176882353a" />
-<img width="625" height="283" alt="Maps simulation " src="https://github.com/user-attachments/assets/e3ef01af-2c2f-4156-8c07-2bdd822ed0cd" />
-<img width="625" height="283" alt="Maps simulation " src="https://github.com/user-attachments/assets/1f876cdc-1493-4fae-93a8-c832b90c4027" />
 <img width="917" height="378" alt="Capture d’écran 2026-05-20 002324" src="https://github.com/user-attachments/assets/7ee481b2-aa2d-4c57-bd78-d0f08170d61a" />
-<img width="908" height="433" alt="logs succes " src="https://github.com/user-attachments/assets/0fa181a8-a819-4fb8-bed4-892ad9b46125" />
+
 
 #  SportData POC - Pipeline DataOps d'Animation & Gestion RH
 
@@ -70,7 +68,7 @@ SLACK_WEBHOOK_URL=[https://hooks.slack.com/services/T000/B000/XXXXXX](https://ho
 ##  4. Logique Métier & Règles de Cohérence
 
 ### Calcul Spatial (Mock API Google Maps)
-
+<img width="625" height="283" alt="Maps simulation " src="https://github.com/user-attachments/assets/1f876cdc-1493-4fae-93a8-c832b90c4027" />
 Le script prend l'adresse textuelle des employés et calcule la distance réelle en kilomètres vers le siège social situé à Lattes (Montpellier : 7.5km, Pérols : 4.2km, etc.).
 
 ### Simulation Cohérente du Flux Strava
@@ -87,7 +85,7 @@ Trois règles de conformité strictes sont appliquées sur le flux généré, el
 3. Validation des types de sports autorisés.
 
 ---
-
+<img width="908" height="433" alt="logs succes " src="https://github.com/user-attachments/assets/0fa181a8-a819-4fb8-bed4-892ad9b46125" />
 ## 5 Restitutions & Animation Slack
 
 Une fois le flux audité et validé par Great Expectations, le pipeline génère les messages d'animation communautaires avec conversion des distances en kilomètres, des temps en minutes, et inclusion des émojis et commentaires afin de creer une communauté et donc de générer de la motivation :
