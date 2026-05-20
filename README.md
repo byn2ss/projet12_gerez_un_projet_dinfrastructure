@@ -1,5 +1,8 @@
+<img width="618" height="427" alt="Capture d’écran 2026-05-21 005154" src="https://github.com/user-attachments/assets/7b17875c-8da5-4324-b055-59176882353a" />
 <img width="625" height="283" alt="Maps simulation " src="https://github.com/user-attachments/assets/e3ef01af-2c2f-4156-8c07-2bdd822ed0cd" />
 <img width="625" height="283" alt="Maps simulation " src="https://github.com/user-attachments/assets/1f876cdc-1493-4fae-93a8-c832b90c4027" />
+<img width="917" height="378" alt="Capture d’écran 2026-05-20 002324" src="https://github.com/user-attachments/assets/7ee481b2-aa2d-4c57-bd78-d0f08170d61a" />
+<img width="908" height="433" alt="logs succes " src="https://github.com/user-attachments/assets/0fa181a8-a819-4fb8-bed4-892ad9b46125" />
 
 #  SportData POC - Pipeline DataOps d'Animation & Gestion RH
 
