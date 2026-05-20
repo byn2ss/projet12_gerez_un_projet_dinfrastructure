@@ -1,0 +1,49 @@
+id: pipeline_sport_data_monitoring
+namespace: company.hr.analytics
+description: Pipeline de traitement du flux Strava, audit Data Quality et calcul des primes RH.
+
+# Déclencheur : Le pipeline tourne automatiquement tous les jours à 01h00 du matin
+triggers:
+  - id: daily_schedule
+    type: io.kestra.plugin.core.trigger.Schedule
+    cron: "0 1 * * *"
+
+tasks:
+  # -----------------------------------------------------------------
+  # ÉTAPE 1 : CLONAGE ET PRÉPARATION DE L'ENVIRONNEMENT
+  # -----------------------------------------------------------------
+  - id: setup_environment
+    type: io.kestra.plugin.core.flow.Subflow
+    flowId: git_clone_project
+    namespace: company.hr.infrastructure
+    description: Récupère la dernière version du code et du fichier Excel RH.
+
+  # -----------------------------------------------------------------
+  # ÉTAPE 2 : EXÉCUTION DU PIPELINE PYTHON ET MONITORING
+  # -----------------------------------------------------------------
+  - id: execute_python_pipeline
+    type: io.kestra.plugin.scripts.python.Commands
+    description: Lance l'ETL, l'audit Great Expectations et génère les sorties (SQL/CSV)
+    containerImage: python:3.11-slim
+    beforeCommands:
+      - pip install numpy pandas requests python-dotenv great_expectations faker openpyxl IPython jsonpatch
+    commands:
+      - python Script.py
+    env:
+      FICHIER_RH: "Donnees_RH.xlsx"
+      BASE_SQLITE: "SportData_POC.db"
+      EXPORT_CSV: "Reporting_RH_Final.csv"
+      SEUIL_ACTIVITES_BIEN_ETRE: "15"
+      POURCENTAGE_PRIME: "0.05"
+      SLACK_WEBHOOK_URL: "{{ secret('SLACK_WEBHOOK_URL') }}" # Clé sécurisée dans Kestra
+
+# -----------------------------------------------------------------
+# GESTION DES ERREURS ET ALERTING (Si Great Expectations ou le script plante)
+# -----------------------------------------------------------------
+errors:
+  - id: alert_on_failure
+    type: io.kestra.plugin.core.flow.Subflow
+    flowId: slack_notification_error
+    namespace: company.hr.infrastructure
+    inputs:
+      message: "🚨 *ÉCHEC DU PIPELINE SPORT DATA* \n- *Flow :* {{ flow.id }} \n- *Statut :* Erreur Critique \n- *Action requise :* Vérifier les logs Great Expectations (Anomalie de données détectée)."

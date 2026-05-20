@@ -1,0 +1,162 @@
+﻿ID salarié;Nom;Prénom;Moyen de déplacement;Distance_siege;Statut_Eligibilite;Montant_Prime_Reel;Nombre_Activites;Jour Bien être
+59019;Colin;Audrey;Transports en commun;8,0;❌ Non Éligible;0,0;18;5
+19841;Ledoux;Monique;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;19;5
+56482;Dumont;Michelle;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;10;0
+21886;Toussaint;Judith;Marche/running;1,5;✅ Éligible;3516,0;17;5
+81001;Bailly;Michelle;Marche/running;1,5;✅ Éligible;2343,5;23;5
+17757;Bazin;Margaret;Vélo/Trottinette/Autres;8,0;✅ Éligible;1573,0;15;5
+17036;Jacques;Julien;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;14;0
+36913;Pons;Brigitte;Transports en commun;8,0;❌ Non Éligible;0,0;23;5
+79006;Rousset;Jérome;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;16;5
+62296;Chauvin;Zakaria;Vélo/Trottinette/Autres;8,0;✅ Éligible;3434,0;20;5
+90284;Chartier;Aurélie;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;18;5
+83440;Maillard;Augustin;Transports en commun;7,5;❌ Non Éligible;0,0;21;5
+18246;Tessier;Francoise;Vélo/Trottinette/Autres;1,5;✅ Éligible;1534,0;20;5
+33386;Neveu;Yves;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;13;0
+19773;Fischer;Benoit;véhicule thermique/électrique;7,5;❌ Non Éligible;0,0;11;0
+70643;Rodriguez;Antoine;Vélo/Trottinette/Autres;7,5;✅ Éligible;1472,0;14;0
+25701;Foucher;Eugénie;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;11;0
+99514;Olivier;Léon;Transports en commun;7,5;❌ Non Éligible;0,0;15;5
+43124;Laole;Francoise;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;18;5
+56632;Evrard;Claire;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;21;5
+28160;Humbert;Victor;Vélo/Trottinette/Autres;1,5;✅ Éligible;1681,0;13;0
+15493;Devaux;Alice;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;21;5
+84233;Gauthier;Michelle;Vélo/Trottinette/Autres;7,5;✅ Éligible;3658,0;11;0
+17997;Dias;Mathilde;véhicule thermique/électrique;7,5;❌ Non Éligible;0,0;20;5
+48589;Lopez;Robert;Vélo/Trottinette/Autres;7,5;✅ Éligible;2480,5;16;5
+76341;Joubert;Claudine;Vélo/Trottinette/Autres;7,5;✅ Éligible;2185,5;19;5
+89943;Royer;Benjamin;Marche/running;8,0;✅ Éligible;3265,5;16;5
+46253;Blin;Léa;véhicule thermique/électrique;1,5;❌ Non Éligible;0,0;13;0
+17376;Rey;Diane;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;10;0
+22426;Poirier;Gabriel;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;16;5
+34413;Aubert;Brigitte;Marche/running;8,0;✅ Éligible;3552,0;12;0
+44472;Lemaire;Maurice;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;11;0
+97309;Roussel;Charles;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;17;5
+39874;Rossi;Claire;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;16;5
+92736;Lagarde;Alain;Vélo/Trottinette/Autres;11,0;✅ Éligible;2160,5;13;0
+43015;Mendes;Juliette;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;19;5
+71502;Louis;Mégane;Vélo/Trottinette/Autres;7,5;✅ Éligible;1692,5;18;5
+16872;Toussaint;Francoise;Vélo/Trottinette/Autres;8,0;✅ Éligible;1528,0;16;5
+76771;Munoz;Andréa;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;12;0
+50408;Bonneau;Monique;Marche/running;8,0;✅ Éligible;2735,5;13;0
+49804;Carlier;Constance;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;19;5
+20083;Jacquot;Marcel;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;18;5
+37866;Gautier;Marine;Transports en commun;8,0;❌ Non Éligible;0,0;16;5
+71190;Vallet;Andre;Vélo/Trottinette/Autres;8,0;✅ Éligible;2929,0;19;5
+57202;Martel;Louis;Transports en commun;7,5;❌ Non Éligible;0,0;11;0
+27620;Hebert;William;Vélo/Trottinette/Autres;1,5;✅ Éligible;3406,0;19;5
+36981;Schmitt;Jules;Marche/running;1,5;✅ Éligible;2120,5;17;5
+89328;Lambert;Denise;Vélo/Trottinette/Autres;7,5;✅ Éligible;1946,5;15;5
+50309;Lacroix;Olivie;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;11;0
+32690;Hamon;Paul;Vélo/Trottinette/Autres;8,0;✅ Éligible;1821,5;16;5
+43861;Klein;Christine;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;13;0
+17027;Boyer;Julie;Vélo/Trottinette/Autres;7,5;✅ Éligible;1809,0;16;5
+99401;Pons;Yves;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;17;5
+86847;Arnaud;Jeremy;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;11;0
+58045;Provost;Elodie;Vélo/Trottinette/Autres;11,0;✅ Éligible;2145,5;14;0
+53673;Ferrand;Julien;Vélo/Trottinette/Autres;7,5;✅ Éligible;1585,0;17;5
+13064;Thibault;Henriette;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;13;0
+18918;Michaud;Naomie;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;9;0
+51328;Albert;Adèle;Vélo/Trottinette/Autres;8,0;✅ Éligible;3715,0;16;5
+86633;Rodriguez;Léon;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;13;0
+29200;Gosselin;Joseph;Transports en commun;7,5;❌ Non Éligible;0,0;16;5
+43542;Pendragon;Arthur;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;19;5
+64886;De Oliveira;Nath;Marche/running;1,5;✅ Éligible;1933,5;9;0
+45140;Henry;Roger;Vélo/Trottinette/Autres;8,0;✅ Éligible;2638,5;10;0
+44927;Fischer;Hugues;Vélo/Trottinette/Autres;1,5;✅ Éligible;3118,5;17;5
+79837;Muller;Alphonse;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;13;0
+76903;Lemaire;Victor;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;12;0
+30351;Samson;Julien;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;22;5
+20697;Cousin;Antoine;véhicule thermique/électrique;7,5;❌ Non Éligible;0,0;18;5
+37830;Toussaint;Alexandre;Transports en commun;8,0;❌ Non Éligible;0,0;18;5
+34678;Mendes;Astrid;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;19;5
+54625;Paul;Christiane;Vélo/Trottinette/Autres;8,0;✅ Éligible;3527,5;18;5
+70575;Munoz;Charlene;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;20;5
+66882;Leleu;Guillaume;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;12;0
+35719;Navarro;Alain;Transports en commun;8,0;❌ Non Éligible;0,0;18;5
+28529;Lefort;Thibaut;Vélo/Trottinette/Autres;7,5;✅ Éligible;1286,5;19;5
+60358;Lesage;Mathilde;Vélo/Trottinette/Autres;7,5;✅ Éligible;2241,5;12;0
+50504;Fabre;Christiane;Vélo/Trottinette/Autres;8,0;✅ Éligible;1895,5;12;0
+56530;Morin;Francis;Transports en commun;8,0;❌ Non Éligible;0,0;11;0
+45221;Georges;Bernard;Vélo/Trottinette/Autres;7,5;✅ Éligible;1711,5;13;0
+86948;Boutin;Philippine;Vélo/Trottinette/Autres;8,0;✅ Éligible;3655,5;18;5
+34899;Besson;Hugues;Marche/running;8,0;✅ Éligible;3618,0;18;5
+36827;Devaux;Audrey;Vélo/Trottinette/Autres;8,0;✅ Éligible;1964,5;16;5
+66425;Jourdan;Thomas;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;13;0
+77789;Bourgeois;Benjamin;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;14;0
+46158;Marchand;Martin;Vélo/Trottinette/Autres;8,0;✅ Éligible;2386,5;18;5
+34382;Payet;Capucine;Transports en commun;7,5;❌ Non Éligible;0,0;10;0
+60141;Colin;Iris;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;16;5
+68454;Ribeiro;Catherine;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;18;5
+45725;Boulanger;Henri;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;14;0
+67121;Pasquier;Claudine;Vélo/Trottinette/Autres;7,5;✅ Éligible;3412,0;17;5
+76076;Moreno;André;Vélo/Trottinette/Autres;8,0;✅ Éligible;3716,5;11;0
+60437;Delattre;Danielle;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;16;5
+33872;Poirier;Laure;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;10;0
+23842;Schneider;Jules;Transports en commun;8,0;❌ Non Éligible;0,0;19;5
+66386;Lacroix;Susanne;Marche/running;1,5;✅ Éligible;2765,5;14;0
+75791;Olivier;Caroline;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;12;0
+55153;Delmas;Colette;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;18;5
+91916;Legrand;Margaud;Vélo/Trottinette/Autres;8,0;✅ Éligible;2376,5;14;0
+50316;Roux;Juliette;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;18;5
+49419;Bernard;Denise;Vélo/Trottinette/Autres;7,5;✅ Éligible;2126,5;14;0
+30945;Grenier;Hugues;Vélo/Trottinette/Autres;7,5;✅ Éligible;3582,0;14;0
+29793;Chauvin;Marine;Transports en commun;7,5;❌ Non Éligible;0,0;10;0
+41293;Marchand;Sabine;Vélo/Trottinette/Autres;1,5;✅ Éligible;2795,5;17;5
+96902;Durand;Nicole;Vélo/Trottinette/Autres;8,0;✅ Éligible;2295,5;10;0
+42472;Devaux;Charles;Transports en commun;7,5;❌ Non Éligible;0,0;25;5
+69938;Guillou;Valérie;Vélo/Trottinette/Autres;8,0;✅ Éligible;1942,0;8;0
+70933;Leconte;Sébastien;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;19;5
+46903;Leleu;Luc;Vélo/Trottinette/Autres;8,0;✅ Éligible;3566,5;12;0
+93699;Klein;Dominique;Transports en commun;11,0;❌ Non Éligible;0,0;18;5
+78962;Perrot;Margot;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;20;5
+90813;Baudry;Gilles;Vélo/Trottinette/Autres;7,5;✅ Éligible;1782,5;19;5
+31222;Gonzalez;Luc;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;22;5
+12497;Fontaine;Gabriel;Vélo/Trottinette/Autres;8,0;✅ Éligible;1391,0;14;0
+90207;Wagner;Andréa;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;8;0
+48260;Maillet;Théodore;Transports en commun;7,5;❌ Non Éligible;0,0;20;5
+46304;Pichon;Benjamin;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;9;0
+73367;Verdier;Simon;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;17;5
+42328;Da Costa;Alain;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;20;5
+59804;Morin;Aurélien;Transports en commun;7,5;❌ Non Éligible;0,0;14;0
+84603;Jean;Marcelle;Vélo/Trottinette/Autres;8,0;✅ Éligible;1348,5;15;5
+57589;Petitjean;Aurélie;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;18;5
+92368;Torres;Emmanuelle;Vélo/Trottinette/Autres;8,0;✅ Éligible;3715,5;22;5
+20157;Menard;Damien;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;13;0
+49571;Meyer;Alfred;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;16;5
+41377;Faure;Emmanuelle;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;16;5
+22092;Gilbert;Lucas;Vélo/Trottinette/Autres;8,0;✅ Éligible;2652,5;22;5
+20377;Boutin;Génée;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;11;0
+29456;Gosselin;Capucine;Vélo/Trottinette/Autres;1,5;✅ Éligible;2406,5;16;5
+88193;Gomez;Daniel;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;19;5
+60948;Guillot;Gégoire;Marche/running;1,5;✅ Éligible;1656,5;17;5
+92440;Lacroix;Sébastien;Transports en commun;11,0;❌ Non Éligible;0,0;11;0
+86486;Marchand;Emmanuel;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;13;0
+56263;Hernandez;William;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;13;0
+59040;Lefebvre;William;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;16;5
+29450;Lambert;Julie;véhicule thermique/électrique;1,5;❌ Non Éligible;0,0;25;5
+74171;Grondin;Bertrand;Vélo/Trottinette/Autres;8,0;✅ Éligible;3626,0;15;5
+31453;Renard;Bertrand;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;19;5
+53944;Lebon;Nath;Vélo/Trottinette/Autres;7,5;✅ Éligible;2805,0;12;0
+27483;Raymond;Juliette;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;14;0
+48154;Gosselin;Simone;Vélo/Trottinette/Autres;7,5;✅ Éligible;3282,0;17;5
+79919;Dupré;Alain;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;19;5
+71657;Delattre;Joseph;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;13;0
+34922;Da Silva;Claire;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;14;0
+42234;Benard;Anais;Transports en commun;8,0;❌ Non Éligible;0,0;10;0
+96558;Munoz;Suzanne;véhicule thermique/électrique;11,0;❌ Non Éligible;0,0;17;5
+86692;Hernandez;Marie;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;14;0
+50866;Techer;Roger;Marche/running;1,5;✅ Éligible;2461,5;17;5
+35731;Morvan;Laurence;Vélo/Trottinette/Autres;8,0;✅ Éligible;3172,5;13;0
+51866;Carre;Marguerite;Marche/running;1,5;✅ Éligible;2711,0;14;0
+19260;Marchand;René;Transports en commun;8,0;❌ Non Éligible;0,0;9;0
+82858;Colas;Nathalie;Vélo/Trottinette/Autres;8,0;✅ Éligible;1591,0;24;5
+50955;Godard;Margaud;Vélo/Trottinette/Autres;8,0;✅ Éligible;3374,0;14;0
+43965;Tanguy;TimothÃ©e;Marche/running;1,5;✅ Éligible;2709,0;18;5
+42960;Normand;Michel;Vélo/Trottinette/Autres;8,0;✅ Éligible;1316,0;16;5
+13780;Renard;Sylvain;Vélo/Trottinette/Autres;8,0;✅ Éligible;3010,0;16;5
+18941;Guillou;Gilles;Vélo/Trottinette/Autres;8,0;✅ Éligible;2995,5;19;5
+81676;Breton;Jeannine;Marche/running;8,0;✅ Éligible;2421,5;9;0
+27069;Delahaye;Philippe;véhicule thermique/électrique;11,0;❌ Non Éligible;0,0;12;0
+30256;Dumas;Odette;véhicule thermique/électrique;8,0;❌ Non Éligible;0,0;10;0
+94680;Pineau;Henri;Vélo/Trottinette/Autres;7,5;✅ Éligible;3209,0;21;5
