@@ -1,3 +1,26 @@
-echo "venv/" >> .gitignore
-echo ".env" >> .gitignore
-echo "pycache/" >> .gitignore
+# --- Environnement Virtuel Python ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Cache Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# --- Données et Bases de données (Sécurité & POC) ---
+# On ignore la base SQLite générée et les fichiers volumineux ou confidentiels
+SportData_POC.db
+Reporting_RH_Final.csv
+.env
+
+# --- Configuration VS Code / IDE ---
+.vscode/
+.idea/
+
+# --- Fichiers Système ---
+.DS_Store
+Thumbs.db
