@@ -12,17 +12,6 @@ Le pipeline est orchestré de manière moderne afin de garantir la portabilité,
 <img width="1920" height="1080" alt="Votre texte de paragraphe" src="https://github.com/user-attachments/assets/f18d4bcf-0935-4601-ad78-865ab4dcaead" />
 
 
-```
-
-[ Données RH (Excel) ] ──┐
-├───> [ Script Python (ETL) ] ───> [ Great Expectations ] ───> [ SQLite (POC.db) ]
-[ Flux Strava (Simulé) ] ──┘             │                         (Bouclier Qualité)            │
-│                                                       └───> [ Power BI ]
-└───> [ Notifications Slack ]
-(#club-sport)
-
-```
-
 ### Description des Composants :
 * **Orchestrateur & Monitoring (Kestra) :** Pilote l'ensemble du workflow, planifie les tâches, gère le cycle de vie du script et fournit des tableaux de bord de suivi (temps d'exécution, statuts succès/échec).
 * **Conteneurisation (Docker) :** Assure que Kestra et l'environnement d'exécution (Python, dépendances) tournent de manière isolée et portable.
@@ -85,6 +74,7 @@ Pour simuler le temps réel, le script génère un flux de **2 500 événements*
 
 ### Audit Data Quality (Great Expectations)
 
+
 Trois règles de conformité strictes sont appliquées sur le flux généré, elle sont vérifé par Great_expectations :
 
 1. Non-nullité des identifiants salariés.
@@ -96,6 +86,7 @@ Trois règles de conformité strictes sont appliquées sur le flux généré, el
 ## 5 Restitutions & Animation Slack
 
 Une fois le flux audité et validé par Great Expectations, le pipeline génère les messages d'animation communautaires avec conversion des distances en kilomètres, des temps en minutes, et inclusion des émojis et commentaires afin de creer une communauté et donc de générer de la motivation :
+<img width="1320" height="284" alt="IMG_3426" src="https://github.com/user-attachments/assets/f8c80371-f9bf-436c-8a45-40ef80bd7612" />
 
 * **Course à pied :** `🤖 [Slack - #club-sport] : "Bravo Audrey Colin ! Tu viens de courir 7.5 km en 42 min ! Quelle énergie ! 🔥🏅"`
 * **Vélo :** `🤖 [Slack - #club-sport] : "Superbe session de Vélo pour Bertrand Grondin ! 8.0 km parcourus en 26 min ! Ensemble vers le bien-être ! 🚴‍♂️💨"`
