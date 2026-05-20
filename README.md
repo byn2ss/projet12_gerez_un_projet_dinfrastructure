@@ -24,6 +24,7 @@ Le pipeline est orchestré de manière moderne afin de garantir la portabilité,
 ## 🛠️ . Configuration & Orchestration (Fichier YAML Kestra)
 
 Voici la configuration du flux utilisé sur Kestra :
+Des triggers on été mis en place pour assurer la véracité des données. Tous les matins à 8:00 les données sont rechargées.
 
 ```yaml
 id: sport_data_kestra_ok
