@@ -1,11 +1,21 @@
 #  SportData POC - Pipeline DataOps d'Animation & Gestion RH
 
-Ce projet présente un pipeline de données industriel (ETL/DataOps) automatisé permettant d'ingérer les flux d'activités sportives des salariés (Simulation de l'API Strava), d'auditer la qualité des données, de calculer des règles de gestion RH (Primes et jours de repos Bien-être), et de générer des publications communautaires pour Slack.
+Ce projet consiste en l'industrialisation d'un pipeline de données (ETL) orchestré pour le département RH (Juliette Mendes). Il automatise le traitement de **2 500 événements sportifs Strava continu** et les croise avec le référentiel collaborateur pour :
+1. Calculer l'éligibilité et le montant des **Primes de Mobilité Durable (5%)**.
+2. Valider l'octroi de **5 jours de congés "Bien-être"** via un seuil dynamique d'activités.
+3. Animer la communauté de l'entreprise en publiant des notifications en temps réel sur **Slack**.
 
 ---
 
-##  1. Architecture du Pipeline (Infrastructure & DataOps)
-
+##  1. Architecture Technique & Stack
+L'infrastructure est entièrement conteneurisée et suit les principes de l'ingénierie DataOps moderne :
+* **Orchestrateur :** [Kestra](https://kestra.io) (Déployé via Docker).
+* **Langage & Librairies :** Python 3 (Pandas, Numpy, Faker, Geopy, Requests).
+* **API Géospatiale Réelle :** OpenStreetMap Nominatim / Geopy (Calcul géodésique de distance).
+* **Data Quality Gate :** Moteur d'audit de conformité interne (Inspiré par *Great Expectations*).
+* **Stockage & BI :** SQLite (Base relationnelle relationnelle) et Power BI (Restitution CSV).
+  
+## Architecture du Pipeline (Infrastructure & DataOps)
 Le pipeline est orchestré de manière moderne afin de garantir la portabilité, le monitoring et la traçabilité des exécutions.
 
 <img width="1920" height="1080" alt="Votre texte de paragraphe" src="https://github.com/user-attachments/assets/f18d4bcf-0935-4601-ad78-865ab4dcaead" />
@@ -21,7 +31,8 @@ Le pipeline est orchestré de manière moderne afin de garantir la portabilité,
 
 ---
 
-## 🛠️ . Configuration & Orchestration (Fichier YAML Kestra)
+
+##  . Configuration & Orchestration (Fichier YAML Kestra)
 
 Voici la configuration du flux utilisé sur Kestra :
 Des triggers on été mis en place pour assurer la véracité des données. Tous les matins à 8:00 les données sont rechargées.
@@ -43,6 +54,14 @@ tasks:
       #Scrip.py executé ici 
 
 ```
+---
+
+## 🛡️ Filtres de Cohérence et Qualité des Données
+Pour garantir la fiabilité de la paie, le pipeline applique un double niveau de contrôle :
+* **Filtre Métier/Spatial :** Synchronisation automatique entre le mode de transport RH déclaré et l'activité Strava. Forçage de la distance réelle calculée par l'API pour les trajets domicile-travail. Distance forcée à 0 m pour l'escalade en salle.
+* **Data Quality Gate :** Blocage immédiat du pipeline (Statut `FAILED`) en cas d'identifiant salarié nul, de distance hors-bornes (0-50 km) ou de type de sport non conforme.
+
+---
 
 ---
 
@@ -88,7 +107,7 @@ Trois règles de conformité strictes sont appliquées sur le flux généré, el
 
 ## 5 Restitutions & Animation Slack
 
-Une fois le flux audité et validé par Great Expectations, le pipeline génère les messages d'animation communautaires avec conversion des distances en kilomètres, des temps en minutes, et inclusion des émojis et commentaires afin de creer une communauté et donc de générer de la motivation :
+Une fois le flux audité et validé par Great Expectations, le pipeline génère les messages d'animation communautaires avec conversion des distances en kilomètres, des temps en minutes, et inclusion des émojis et commentaires afin de creer une communauté et donc de générer de la motivation directement tranmis avec Webhooks :
 <img width="1320" height="284" alt="IMG_3426" src="https://github.com/user-attachments/assets/f8c80371-f9bf-436c-8a45-40ef80bd7612" />
 
 * **Course à pied :** `🤖 [Slack - #club-sport] : "Bravo Audrey Colin ! Tu viens de courir 7.5 km en 42 min ! Quelle énergie ! 🔥🏅"`
@@ -125,7 +144,7 @@ Pensez à insérer une capture d'écran de votre rapport Power BI finalisé pour
 2. Démarrer Kestra en liant le volume de données :
 
 ```bash
-docker run --pull always -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock kestra/kestra:latest server local
+docker run --pull always -p 8080:8080 -e SLACK_WEBHOOK_URL="VOTRE_WEBHOOK_SLACK" -v /var/run/docker.sock:/var/run/docker.sock kestra/kestra:latest server local
 ```
 
 3. Importer le fichier Excel de données dans l'onglet **Files** de Kestra.
